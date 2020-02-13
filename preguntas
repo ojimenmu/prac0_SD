@@ -1,0 +1,16 @@
+Executeu el programa i responeu-vos les següents preguntes:
+
+    Si canvieu el format o l’ordre en el writeTest i no en el readTest, quin error dóna?
+
+        - Dóna error de "Broken Pipe" ja que al llegir primer no tindrà res a llegir.
+
+    Si obriu el fitxer test amb un editor com el vi hi veieu exactament el mateix que heu escrit? Quins caràcters són els que no veieu?
+
+        - Només es veu si és string , si és int no es veu al editor de text.
+
+    El nombre de bytes que ocupa el fitxer és exactament igual al nombre de bytes que hi heu escrit?
+
+        -Si
+
+    Sabríeu detectar les trames que heu escrit mirant el fitxer test?
+        -Amb l'okteta si.

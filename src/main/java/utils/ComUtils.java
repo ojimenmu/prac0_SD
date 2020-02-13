@@ -152,6 +152,24 @@ public class ComUtils {
         // Enviem l'string writeBytes de DataOutputStrem no envia el byte més alt dels chars.
         dataOutputStream.writeBytes(str);
     }
+    public void writeChar(char input) throws IOException {
+        byte by[] = new byte[1];
+        by[0] = (byte) input;
+        dataOutputStream.write(by, 0,1);
+    }
+
+    public char readChar() throws IOException {
+        byte[] bStr = new byte[1];
+        char[] cStr = new char[1];
+
+        bStr = read_bytes(1);
+
+        cStr[0]= (char) bStr[0];
+
+        char result = cStr[0];
+
+        return result;
+    }
 
     public enum Endianness {
         BIG_ENNDIAN,
